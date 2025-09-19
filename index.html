@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electron File Viewer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Electron File Viewer</h1>
+      <div class="controls">
+        <button id="select-file" type="button">Select File</button>
+        <button id="show-content" type="button">Display File Content</button>
+      </div>
+      <p id="status-message" class="status info">Select a file to begin.</p>
+      <section class="file-info">
+        <h2>Selected File</h2>
+        <p id="file-path" class="file-path">No file selected.</p>
+      </section>
+      <section class="content-viewer">
+        <h2>File Content</h2>
+        <textarea id="file-content" rows="15" placeholder="File contents will appear here" readonly></textarea>
+      </section>
+    </main>
+    <script src="renderer.js"></script>
+  </body>
+</html>

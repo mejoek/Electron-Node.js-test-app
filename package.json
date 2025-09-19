@@ -1,0 +1,20 @@
+{
+  "name": "electron-file-viewer",
+  "version": "1.0.0",
+  "description": "Electron app with buttons to open a file dialog and display file contents.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "electron",
+    "file",
+    "dialog",
+    "viewer"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.2.2"
+  }
+}
