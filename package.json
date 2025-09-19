@@ -2,9 +2,11 @@
   "name": "electron-file-viewer",
   "version": "1.0.0",
   "description": "Electron app with buttons to open a file dialog and display file contents.",
+  "productName": "Electron File Viewer",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack:win": "PATH=\"$PWD/scripts:$PATH\" electron-packager . ElectronFileViewer --platform=win32 --arch=x64 --out=dist --overwrite"
   },
   "keywords": [
     "electron",
@@ -15,6 +17,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^28.2.2"
+    "electron": "^28.2.2",
+    "electron-packager": "^17.1.1"
   }
 }

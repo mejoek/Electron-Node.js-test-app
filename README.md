@@ -20,4 +20,10 @@ When the window opens, click **Select File** to pick a file, then click **Displa
 
 ## Packaging for Windows
 
-To produce a Windows distributable you can integrate a packaging tool such as `electron-builder` or `electron-forge`. This sample focuses on the core functionality; you can extend it further depending on your deployment needs.
+After installing dependencies you can build a Windows distributable from any platform with:
+
+```bash
+npm run pack:win
+```
+
+The packaged application is written to `dist/`. On macOS or Linux the script falls back to stubbed `wine` binaries, so Windows-specific metadata (icon, version stamping) retains Electron defaults. Run the packaging command on Windows or install Wine if you need to customize those resources.

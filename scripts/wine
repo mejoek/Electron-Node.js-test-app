@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Stub script to satisfy Electron Packager when Wine is unavailable.
+echo "wine stub: skipping Windows resource editing" >&2
+exit 0
